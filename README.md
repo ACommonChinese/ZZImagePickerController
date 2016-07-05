@@ -9,7 +9,7 @@ iOS图片多选
 
 ## 使用方法
 
-1. 把文件夹ZZImagePickerController托入项目，并在需要使用的地方导入头文件
+1> 把文件夹ZZImagePickerController托入项目，并在需要使用的地方导入头文件
 
 ```
 #import "ZZImagePickerController.h"
@@ -25,7 +25,7 @@ ZZImagePickerController *controller2 = [[ZZImagePickerController alloc] initWith
 controller.pickDelegate = self;
 [self presentViewController:controller animated:YES completion:nil];
 ```
-2. 声明并实现协议：<ZZImagePickerControllerDelegate>
+2> 声明并实现协议：<ZZImagePickerControllerDelegate>
 
 ```
 - (void)imagePickerController:(ZZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets infos:(NSArray<NSDictionary *> *)infos {
