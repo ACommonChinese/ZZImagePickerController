@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZZAssetCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXz-9l-JNw" userLabel="imageView">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42N-eS-NrJ" userLabel="selectPhotoButton">
+                        <rect key="frame" x="36" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Q3G-uE-QW5"/>
+                            <constraint firstAttribute="width" constant="44" id="nNs-cY-yd1"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="selected">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectPhotoButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="t29-SD-LXa"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_def_photoPickerVc.png" translatesAutoresizingMaskIntoConstraints="NO" id="ugH-rv-tv5" userLabel="selectImageView">
+                        <rect key="frame" x="53" y="0.0" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="r3X-vm-e4r"/>
+                            <constraint firstAttribute="width" constant="27" id="wRQ-OP-I46"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kw-eb-RZy" userLabel="bottomView">
+                        <rect key="frame" x="0.0" y="63" width="80" height="17"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoSendIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-ji-848" userLabel="videoIcon">
+                                <rect key="frame" x="5" y="0.0" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="HX0-LK-KcC"/>
+                                    <constraint firstAttribute="width" constant="17" id="dzd-Hr-psJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-oJ-nyR" userLabel="timeLengthLabel">
+                                <rect key="frame" x="26" y="0.0" width="50" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dtM-ji-848" firstAttribute="centerY" secondItem="1Kw-eb-RZy" secondAttribute="centerY" id="DjF-Tb-0pw"/>
+                            <constraint firstItem="TA7-oJ-nyR" firstAttribute="leading" secondItem="dtM-ji-848" secondAttribute="trailing" constant="4" id="ZKD-9J-364"/>
+                            <constraint firstAttribute="height" constant="17" id="hig-aB-014"/>
+                            <constraint firstItem="TA7-oJ-nyR" firstAttribute="top" secondItem="1Kw-eb-RZy" secondAttribute="top" id="kgn-aU-G9w"/>
+                            <constraint firstAttribute="bottom" secondItem="TA7-oJ-nyR" secondAttribute="bottom" id="px2-7s-zJc"/>
+                            <constraint firstAttribute="trailing" secondItem="TA7-oJ-nyR" secondAttribute="trailing" constant="4" id="q3D-mp-BqR"/>
+                            <constraint firstItem="dtM-ji-848" firstAttribute="leading" secondItem="1Kw-eb-RZy" secondAttribute="leading" constant="5" id="xhR-Rp-16U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dXz-9l-JNw" secondAttribute="trailing" id="Aul-Qq-ohG"/>
+                <constraint firstAttribute="trailing" secondItem="42N-eS-NrJ" secondAttribute="trailing" id="JQW-TD-opA"/>
+                <constraint firstItem="dXz-9l-JNw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NBP-vB-Z4O"/>
+                <constraint firstItem="1Kw-eb-RZy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PR4-x9-qDw"/>
+                <constraint firstAttribute="bottom" secondItem="1Kw-eb-RZy" secondAttribute="bottom" id="U8G-Uu-YLt"/>
+                <constraint firstItem="dXz-9l-JNw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aK5-aw-k0C"/>
+                <constraint firstAttribute="bottom" secondItem="dXz-9l-JNw" secondAttribute="bottom" id="e5d-ID-T42"/>
+                <constraint firstItem="ugH-rv-tv5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kas-2V-jhd"/>
+                <constraint firstItem="42N-eS-NrJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="koK-uV-pfe"/>
+                <constraint firstAttribute="trailing" secondItem="ugH-rv-tv5" secondAttribute="trailing" id="mg4-SU-u1h"/>
+                <constraint firstAttribute="trailing" secondItem="1Kw-eb-RZy" secondAttribute="trailing" id="xdU-RZ-k8A"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomView" destination="1Kw-eb-RZy" id="Ofs-GH-iNV"/>
+                <outlet property="imageView" destination="dXz-9l-JNw" id="ADK-Nl-mMd"/>
+                <outlet property="selectImageView" destination="ugH-rv-tv5" id="mby-On-EeV"/>
+                <outlet property="selectPhotoButton" destination="42N-eS-NrJ" id="IfN-qR-a75"/>
+                <outlet property="timeLengthLabel" destination="TA7-oJ-nyR" id="2j4-rM-8t5"/>
+            </connections>
+            <point key="canvasLocation" x="963" y="289"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="VideoSendIcon.png" width="17" height="17"/>
+        <image name="photo_def_photoPickerVc.png" width="27" height="27"/>
+    </resources>
+</document>
