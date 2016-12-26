@@ -42,6 +42,9 @@ controller.pickDelegate = self;
 
 ```
 
+注意，升级到iOS10，需要在plist文件中加键值对：
+Privacy - Photo Library Usage Description    ：   [描述文字，比如请允许使用相册]
+
 **详情可参见Demo，效果图：**  
 
 <img src="./images/1.png" width="320" height="568">
