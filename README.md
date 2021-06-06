@@ -5,8 +5,6 @@ iOS图片多选 multi image select
 
 iOS图片多选
 
-
-
 ## 使用方法
 
 1> 把文件夹ZZImagePickerController托入项目，并在需要使用的地方导入头文件
